@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:social_app/commons/widgets/avatar_status_message.dart';
 import 'package:social_app/commons/widgets/status_icon.dart';
@@ -23,7 +25,7 @@ class DemoPage extends StatelessWidget {
           horizontal: 20,
         ),
         child: Column(
-          children: const [
+          children: [
             Padding(
               padding: EdgeInsets.all(10),
             ),
@@ -43,7 +45,7 @@ class DemoPage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(10),
             ),
-            MessageItem(),
+            MessageItem("Herman Pope", "04:04AM", "Hey! How's it going?"),
             Padding(
               padding: EdgeInsets.all(10),
             ),

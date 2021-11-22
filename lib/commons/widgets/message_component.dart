@@ -1,41 +1,46 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:flutter/material.dart';
 import 'package:social_app/themes/app_text_style.dart';
 
 class MessageComponent extends StatelessWidget {
-  const MessageComponent({Key? key}) : super(key: key);
+  final String userName;
+  final String lastSeen;
+  final String lastMessage;
+
+  const MessageComponent(this.userName, this.lastSeen, this.lastMessage);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-        top: 6,
+        top: 16,
         bottom: 20,
-        right: 16,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: const [
+            children: [
               Expanded(
                 flex: 3,
                 child: Text(
-                  "Herman Pope",
+                  userName,
                   style: AppTextStyle.userNameTxt,
                 ),
               ),
-              Padding(
+              const Padding(
                 padding: EdgeInsets.all(15),
               ),
               Text(
-                "04:21 AM",
+                lastSeen,
                 style: AppTextStyle.timeDisplay,
               )
             ],
           ),
           Text(
-            "What kind of music do you like?",
+            lastMessage,
             style:
                 AppTextStyle.chatTxt.copyWith(overflow: TextOverflow.ellipsis),
           ),

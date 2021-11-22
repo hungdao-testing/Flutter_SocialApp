@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:social_app/themes/app_image.dart';
 
 class Avatar extends StatelessWidget {
-  const Avatar({Key? key}) : super(key: key);
+  final String? image;
+  const Avatar({Key? key, this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

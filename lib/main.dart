@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_app/list_message_item.dart';
 import 'package:social_app/themes/app_color.dart';
 
 import 'demo_page.dart';
@@ -15,12 +16,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        backgroundColor: AppColor.backgroundColor
-      ),
-      home: const DemoPage(),
+      theme: ThemeData(backgroundColor: AppColor.backgroundColor),
+      home: ListMessageItem(),
     );
   }
 }
-
-
