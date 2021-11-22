@@ -14,8 +14,9 @@ class MessageComponent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.only(
-        top: 16,
-        bottom: 20,
+        top: 6,
+        bottom: 6,
+        right: 16,
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -30,14 +31,14 @@ class MessageComponent extends StatelessWidget {
                   style: AppTextStyle.userNameTxt,
                 ),
               ),
-              const Padding(
-                padding: EdgeInsets.all(15),
-              ),
               Text(
                 lastSeen,
                 style: AppTextStyle.timeDisplay,
               )
             ],
+          ),
+          const SizedBox(
+            height: 5,
           ),
           Text(
             lastMessage,

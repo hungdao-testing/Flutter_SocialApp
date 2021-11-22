@@ -8,30 +8,26 @@ class AppTextStyle {
     fontFamily: fontPath + "/avenir_ff/AvenirLTStd-Book.otf",
     fontSize: 17,
     fontWeight: FontWeight.w800,
-    letterSpacing: -0.41,
     color: AppColor.whiteTextColor,
   );
 
   static const chatTxt = TextStyle(
     fontFamily: fontPath + "/avenir_ff/AvenirLTStd-Book.otf",
     fontSize: 17,
-    fontWeight: FontWeight.normal,
-    letterSpacing: -0.41,
+    fontWeight: FontWeight.w300,
     color: AppColor.whiteTextColor,
   );
   static const numberMessageDisplayedInIcon = TextStyle(
     fontFamily: fontPath + "/avenir_ff/AvenirLTStd-Book.otf",
     fontSize: 13,
     fontWeight: FontWeight.normal,
-    letterSpacing: -0.41,
     color: AppColor.whiteTextColor,
   );
 
   static const timeDisplay = TextStyle(
     fontFamily: fontPath + "/avenir_ff/AvenirLTStd-Book.otf",
     fontSize: 13,
-    fontWeight: FontWeight.normal,
-    letterSpacing: -0.208,
+    fontWeight: FontWeight.w300,
     color: AppColor.timeDisplayColor,
   );
 }

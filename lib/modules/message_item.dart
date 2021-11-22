@@ -11,16 +11,25 @@ class MessageItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        const AvatarStatusMessage(),
-        const SizedBox(
-          width: 20,
-        ),
-        Expanded(
-          child: MessageComponent(userName, lastSeen, lastMessage),
-        ),
-      ],
+    return Container(
+      margin: const EdgeInsets.only(
+        top: 20,
+      ),
+      height: 76,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const AvatarStatusMessage(),
+          const SizedBox(
+            width: 20,
+          ),
+          Expanded(
+            child: MessageComponent(userName, lastSeen, lastMessage),
+          ),
+        ],
+      ),
     );
   }
 }
