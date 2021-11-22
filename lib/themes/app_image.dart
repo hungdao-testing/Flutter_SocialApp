@@ -1,3 +1,3 @@
 class AppImage {
-  static const defaultImg = "assets/images/naruto.png";
+  static const defaultImg = "assets/images/batman.png";
 }

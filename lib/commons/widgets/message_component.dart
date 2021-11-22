@@ -9,7 +9,7 @@ class MessageComponent extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(
         top: 6,
-        bottom: 6,
+        bottom: 20,
         right: 16,
       ),
       child: Column(
@@ -25,7 +25,9 @@ class MessageComponent extends StatelessWidget {
                   style: AppTextStyle.userNameTxt,
                 ),
               ),
-              Padding(padding: EdgeInsets.all(15)),
+              Padding(
+                padding: EdgeInsets.all(15),
+              ),
               Text(
                 "04:21 AM",
                 style: AppTextStyle.timeDisplay,
@@ -38,6 +40,14 @@ class MessageComponent extends StatelessWidget {
                 AppTextStyle.chatTxt.copyWith(overflow: TextOverflow.ellipsis),
           ),
         ],
+      ),
+      decoration: BoxDecoration(
+        border: Border(
+          bottom: BorderSide(
+            color: const Color(0xff000000).withOpacity(0.5),
+            width: 1,
+          ),
+        ),
       ),
     );
   }

@@ -11,9 +11,14 @@ class Avatar extends StatelessWidget {
       width: 60,
       decoration: const BoxDecoration(
         shape: BoxShape.circle,
-        image: DecorationImage(image: AssetImage(AppImage.defaultImg), fit: BoxFit.cover),
+        image: DecorationImage(
+          alignment: Alignment.center,
+          image: AssetImage(
+            AppImage.defaultImg,
+          ),
+          fit: BoxFit.cover,
+        ),
       ),
     );
-
   }
 }

@@ -18,23 +18,35 @@ class DemoPage extends StatelessWidget {
         title: const Text("Demo components"),
         backgroundColor: AppColor.backgroundColor,
       ),
-      body: Container(
-        // alignment: Alignment.center,
+      body: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 20,
+        ),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(
+              padding: EdgeInsets.all(10),
+            ),
             StatusIcon(),
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(
+              padding: EdgeInsets.all(10),
+            ),
             StatusIconMessage(),
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(
+              padding: EdgeInsets.all(10),
+            ),
             Avatar(),
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(
+              padding: EdgeInsets.all(10),
+            ),
             AvatarStatusMessage(),
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(
+              padding: EdgeInsets.all(10),
+            ),
             MessageItem(),
-            Padding(padding: EdgeInsets.all(10)),
+            Padding(
+              padding: EdgeInsets.all(10),
+            ),
           ],
         ),
       ),
