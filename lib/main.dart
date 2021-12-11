@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:social_app/list_message_item.dart';
+import 'package:social_app/read_json.dart';
 import 'package:social_app/themes/app_color.dart';
 
 import 'demo_page.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(backgroundColor: AppColor.backgroundColor),
-      home: ListMessageItem(),
+      home: const ReadJson(),
     );
   }
 }

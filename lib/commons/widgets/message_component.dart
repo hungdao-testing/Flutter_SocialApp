@@ -13,11 +13,6 @@ class MessageComponent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(
-        top: 6,
-        bottom: 6,
-        right: 16,
-      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -31,9 +26,11 @@ class MessageComponent extends StatelessWidget {
                   style: AppTextStyle.userNameTxt,
                 ),
               ),
-              Text(
-                lastSeen,
-                style: AppTextStyle.timeDisplay,
+              Expanded(
+                child: Text(
+                  lastSeen,
+                  style: AppTextStyle.timeDisplay,
+                ),
               )
             ],
           ),
